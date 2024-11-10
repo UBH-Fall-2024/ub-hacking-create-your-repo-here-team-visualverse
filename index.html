@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Upload an Image</h1>
+        <div id="image-preview" class="image-preview"></div>
+
+        <!-- Custom file upload button -->
+        <label for="fileInput" class="custom-file-upload">Choose Image</label>
+        <input type="file" id="fileInput" accept="image/*" hidden>
+
+        <button onclick="uploadImage()">Upload</button>
+        <p id="successMessage" class="success-message"></p>
+    </div>
+
+    <!-- Loading spinner -->
+    <div id="loadingSpinner" class="loading-spinner"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
